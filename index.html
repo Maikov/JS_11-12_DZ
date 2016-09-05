@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CAROUSEL</title>
+   	
+    <link rel="stylesheet" href="css/style.css">
+         	
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jQuery.carousel.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/script.js"></script>
+<!-- TEMPLATE -->
+    <script type="text/html" id="CV">
+        <div id="wrapper">
+            <h2><%= name %></h2>
+            <div class="foto"><img src=<%= img %>></div>
+            <p><%= speciality %></p>
+            <div class="section">
+                <p>Хочу учить фронтенд потому, что:</p> 
+                <ul>
+                    <li><%= firstLine %></li>
+                    <li><%= secondLine %></li>
+                    <li><%= thirdLine %></li>
+                </ul>
+            </div>
+            <div class="section">
+                <p>Мой контактный телефон:<br/><%= phoneNumber %></p>
+                <p>Мой профиль вконтакте:<br/><a href=<%= vk %>>vk.com</a></p>
+            </div>
+            <div class="section"><p class="p_template">Мой фидбек:<br/><%= feedback %></p></div>
+        </div>
+    </script>
+</head>
+
+<body>
+<!-- CAROUSEL -->
+    <div class="wrapper">
+        <h1 class="page-header">My Carousel</h1>
+        <div class="carousel-arrow-left"><span>Влево</span></div>
+        <div class="carousel-hider">
+            <ul class="carousel-list">
+                <li class="carousel-element">
+                    <img src="img/image1.jpg"><p class="p_carousel">Разметка</p></li>
+                <li class="carousel-element">
+                    <img src="img/image2.jpg"><p class="p_carousel">Траншея</p></li>
+                <li class="carousel-element">
+                    <img src="img/image3.jpg"><p class="p_carousel">Арматура</p></li>
+                <li class="carousel-element">
+                    <img src="img/image4.jpg"><p class="p_carousel">Опалубка</p></li>
+                <li class="carousel-element">
+                    <img src="img/image5.jpg"><p class="p_carousel">Фундамент</p></li>
+                <li class="carousel-element">
+                    <img src="img/image6.jpg"><p class="p_carousel">Обвязка</p></li>
+                <li class="carousel-element">
+                    <img src="img/image7.jpg"><p class="p_carousel">Каркас</p></li>
+                <li class="carousel-element">
+                    <img src="img/image8.jpg"><p class="p_carousel">Коробка</p></li>
+                <li class="carousel-element">
+                    <img src="img/image9.jpg"><p class="p_carousel">Отделка снаружи</p></li>
+                <li class="carousel-element">
+                    <img src="img/image10.jpg"><p class="p_carousel">Отделка внутри</p></li>
+                <li class="carousel-element">
+                    <img src="img/image11.jpg"><p class="p_carousel">Парилка</p></li>
+                <li class="carousel-element">
+                    <img src="img/image12.jpg"><p class="p_carousel">Готовая баня</p></li>
+            </ul>
+        </div>
+        <div class="carousel-arrow-right"><span>Вправо</span></div>
+    </div>
+</body>
+</html>
