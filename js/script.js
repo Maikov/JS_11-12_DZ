@@ -1,6 +1,6 @@
  $(function() {
 
-  	var html = $('#CV').html();
+  	var html = $('#cv').html();
   	var data = {
       name: 'Майков Антон Петрович',
   		img: '"img/anton.jpg"',
